@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::selection {
+    background-color: none;
+    color: white;
+}
+
+.CardTitle::-webkit-scrollbar , .CardDetail::-webkit-scrollbar {
+    display: none;
+}
+
+@media screen and (max-width:500px) {
+    .Todo {
+        font-size: 3rem;
+    }
+
+    .List {
+        font-size: 10rem;
+    }
+
+    .OneCard {
+        width: 90%;
+        height: fit-content;
+    }
+
+    .CardContainer {
+        gap: 1rem;
+        justify-content: center;
+    }
+
+}
